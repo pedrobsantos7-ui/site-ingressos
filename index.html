@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Mix - Ingressos para Shows em Votuporanga</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="flexbox.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+  <!-- 1. TOPO (FLEXBOX) -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#" class="logo">Villa <span>Mix</span></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="#destaque">Destaque</a></li>
+          <li><a href="#setores">Setores</a></li>
+          <li><a href="#galeria">Experiência</a></li>
+          <li><a href="#ambiente">O Recinto</a></li>
+          <li><a href="#shows">Atrações</a></li>
+          <li><a href="#passaportes">Passaportes</a></li>
+          <li><a href="#agenda">Disponibilidade</a></li>
+        </ul>
+      </nav>
+      <a href="#shows" class="btn btn-ouro btn-pequeno">Garantir Ingresso</a>
+    </div>
+  </header>
+
+  <!-- 2. HERO (FLEXBOX) -->
+  <section id="destaque" class="hero">
+    <div class="container hero-conteudo">
+      <div class="hero-texto">
+        <span class="card-selo">🔥 Destaque do Mês</span>
+        <p class="eyebrow" style="margin-top: 1rem;">05 de Novembro • Quinta-feira • Recinto Licínio Siqueira</p>
+        <h1>LUAN <em>SANTANA</em></h1>
+        <p class="hero-descricao">
+          A turnê Luan City 2.0 abre a maratona de shows do Vila Mix Votuporanga na quinta-feira! Megaestrutura de luzes, som de ponta e um espetáculo inesquecível no interior paulista.
+        </p>
+        
+        <div class="hero-botoes">
+          <button class="btn btn-ouro" onclick="abrirModal('Luan Santana', '05/11')">Comprar Ingresso Agora</button>
+          <a href="#ambiente" class="btn btn-contorno">Ver Mapa do Recinto</a>
+        </div>
+
+        <ul class="hero-numeros">
+          <li>
+            <strong>30k+</strong>
+            <span>Pessoas no Recinto</span>
+          </li>
+          <li>
+            <strong>100%</strong>
+            <span>Segurança e Acesso</span>
+          </li>
+          <li>
+            <strong>3</strong>
+            <span>Setores Exclusivos</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-imagem">
+        <img src="images.jpg" alt="Luan Santana Villa Mix Votuporanga">
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CARDS DE SETORES (FLEXBOX) -->
+  <section id="setores" class="secao secao-escura">
+    <div class="container">
+      <div class="secao-cabecalho">
+        <p class="eyebrow">Experiência Única</p>
+        <h2>Conheça os <em>Setores</em></h2>
+        <p>Escolha o espaço ideal para curtir os maiores shows da região com o máximo de conforto e estilo.</p>
+      </div>
+
+      <div class="cards-servicos">
+        <article class="card-servico">
+          <span class="card-numero">01</span>
+          <h3>Pista Premium</h3>
+          <p>Visão privilegiada em frente ao palco com bares e banheiros exclusivos no setor.</p>
+          <div class="card-rodape">
+            <div class="card-preco">
+              <small>A partir de</small>
+              <strong>R$ 80,00</strong>
+            </div>
+            <button class="btn btn-ouro btn-pequeno" onclick="abrirModal('Pista Premium', '05/11')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card-servico card-destaque">
+          <span class="card-selo">Mais Vendido</span>
+          <span class="card-numero">02</span>
+          <h3>Área VIP Frontstage</h3>
+          <p>Acesso colado nos artistas, atendimento ultra rápido, lounges de descanso e área coberta.</p>
+          <div class="card-rodape">
+            <div class="card-preco">
+              <small>A partir de</small>
+              <strong>R$ 140,00</strong>
+            </div>
+            <button class="btn btn-ouro btn-pequeno" onclick="abrirModal('Área VIP Frontstage', '05/11')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <span class="card-numero">03</span>
+          <h3>Camarote Open Bar</h3>
+          <p>Cerveja trincando, drinks premium, água e refrigerante liberados a noite toda.</p>
+          <div class="card-rodape">
+            <div class="card-preco">
+              <small>A partir de</small>
+              <strong>R$ 250,00</strong>
+            </div>
+            <button class="btn btn-ouro btn-pequeno" onclick="abrirModal('Camarote Open Bar', '05/11')">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. GALERIA BENTO (GRID) -->
+  <section id="galeria" class="secao">
+    <div class="container">
+      <div class="secao-cabecalho">
+        <p class="eyebrow">Vibe Sertaneja</p>
+        <h2>Estrutura & <em>Atmosfera</em></h2>
+      </div>
+
+      <div class="bento">
+        <div class="bento-item bento-1">
+          <img src="IMG-20261029-WA0070.jpg" alt="Palco Sertanejo Vila Mix">
+          <figcaption>Palco Principal - Vila Mix Votuporanga</figcaption>
+        </div>
+        <div class="bento-item bento-2">
+          <img src="IMG-20260501-WA0027(1).jpg" alt="Camarote Open Bar">
+          <figcaption>Camarote Open Bar Premium</figcaption>
+        </div>
+        <div class="bento-item bento-3">
+          <img src="IMG-20261029-WA0080.jpg" alt="Iluminação e Shows">
+          <figcaption>Show de Efeitos Visuais & Lasers</figcaption>
+        </div>
+        <div class="bento-item bento-4">
+          <img src="IMG-20261029-WA0078.jpg" alt="Pista Premium Frontstage">
+          <figcaption>Pista Premium e Frontstage Colado na Grade</figcaption>
+        </div>
+        <div class="bento-item bento-5">
+          <img src="IMG-20261029-WA0079.jpg" alt="Arena Sertaneja">
+          <figcaption>Recinto de Eventos Licínio Siqueira - Votuporanga/SP</figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. AMBIENTE (GRID AREAS) -->
+  <section id="ambiente" class="secao secao-escura">
+    <div class="container">
+      <div class="ambiente">
+        <div class="amb-titulo">
+          <p class="eyebrow">Estrutura de Ponta</p>
+          <h2>O Recinto de <em>Votuporanga</em></h2>
+        </div>
+
+        <div class="amb-texto">
+          <p>O Recinto de Eventos Licínio Siqueira foi especialmente preparado para o Vila Mix. Conta com praça de alimentação country/sertaneja completa, suporte médico de emergência, controle de acesso tecnológico e estacionamento privativo de alta segurança.</p>
+        </div>
+
+        <ul class="amb-numeros">
+          <li>
+            <strong>30k+</strong>
+            <span>Capacidade Oficial</span>
+          </li>
+          <li>
+            <strong>100%</strong>
+            <span>Monitoramento 24h</span>
+          </li>
+          <li>
+            <strong>3</strong>
+            <span>Setores Exclusivos</span>
+          </li>
+        </ul>
+
+        <div class="amb-imagem">
+          <img src="IMG-20261029-WA0082.jpg" alt="Estrutura do Recinto Votuporanga">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PROGRAMAÇÃO / ATRAÇÕES (ORDEM CRONOLÓGICA DAS DATAS) -->
+  <section id="shows" class="secao">
+    <div class="container">
+      <div class="secao-cabecalho">
+        <p class="eyebrow">Atrações Confirmadas</p>
+        <h2>Próximos <em>Grandes Shows</em></h2>
+      </div>
+
+      <div class="equipe">
+        <!-- SHOW 1: LUAN SANTANA (QUINTA 05/11) -->
+        <article class="barbeiro">
+          <span class="card-selo" style="position: absolute; top: 12px; right: 12px; z-index: 2;">05 NOV</span>
+          <img src="IMG-20261029-WA0073.jpg" alt="Luan Santana">
+          <div class="barbeiro-info">
+            <span class="barbeiro-funcao">05 de Novembro • Quinta-feira</span>
+            <h3>Luan Santana</h3>
+            <p>Turnê Luan City 2.0</p>
+            <button class="btn btn-ouro btn-pequeno" onclick="abrirModal('Luan Santana', '05/11')">Comprar Ingressos</button>
+          </div>
+        </article>
+
+        <!-- SHOW 2: HENRIQUE & JULIANO (SEXTA 06/11) -->
+        <article class="barbeiro">
+          <span class="card-selo" style="position: absolute; top: 12px; right: 12px; z-index: 2;">06 NOV</span>
+          <img src="IMG-20261029-WA0075.jpg" alt="Henrique e Juliano">
+          <div class="barbeiro-info">
+            <span class="barbeiro-funcao">06 de Novembro • Sexta-feira</span>
+            <h3>Henrique & Juliano</h3>
+            <p>Manifesto Musical Ao Vivo</p>
+            <button class="btn btn-ouro btn-pequeno" onclick="abrirModal('Henrique & Juliano', '06/11')">Comprar Ingressos</button>
+          </div>
+        </article>
+
+        <!-- SHOW 3: GUSTTAVO LIMA (SÁBADO 07/11) -->
+        <article class="barbeiro">
+          <span class="card-selo" style="position: absolute; top: 12px; right: 12px; z-index: 2;">07 NOV</span>
+          <img src="IMG-20261029-WA0074.jpg" alt="Gusttavo Lima">
+          <div class="barbeiro-info">
+            <span class="barbeiro-funcao">07 de Novembro • Sábado</span>
+            <h3>Gusttavo Lima</h3>
+            <p>O Embaixador In Votu</p>
+            <button class="btn btn-ouro btn-pequeno" onclick="abrirModal('Gusttavo Lima', '07/11')">Comprar Ingressos</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PLANOS / PASSAPORTES (FLEXBOX) -->
+  <section id="passaportes" class="secao secao-escura">
+    <div class="container">
+      <div class="secao-cabecalho">
+        <p class="eyebrow">Combos Promocionais</p>
+        <h2>Passaportes de <em>Temporada</em></h2>
+        <p>Garanta entrada garantida para os 3 shows (05, 06 e 07/11) com valores exclusivos no Vila Mix.</p>
+      </div>
+
+      <div class="planos">
+        <article class="plano">
+          <h3>Passaporte Pista</h3>
+          <div class="plano-preco">
+            <strong>R$ 210</strong> <small>/3 shows</small>
+          </div>
+          <ul class="plano-lista">
+            <li>Acesso às 3 noites (Luan, H&J e Gusttavo)</li>
+            <li>Entrada rápida no recinto</li>
+            <li>Acesso aos bares da pista</li>
+          </ul>
+          <button class="btn btn-contorno" onclick="abrirModal('Passaporte Pista', '3 Shows (05 a 07/11)')">Adquirir Passaporte</button>
+        </article>
+
+        <article class="plano plano-destaque">
+          <span class="card-selo">Mais Desejado</span>
+          <h3>Passaporte VIP</h3>
+          <div class="plano-preco">
+            <strong>R$ 380</strong> <small>/3 shows</small>
+          </div>
+          <ul class="plano-lista">
+            <li>Acesso à área VIP Frontstage em todos os shows</li>
+            <li>Entrada por portão exclusivo Vila Mix</li>
+            <li>Banheiros de contêiner climatizados</li>
+            <li>1 Copo colecionável exclusivo do evento</li>
+          </ul>
+          <button class="btn btn-ouro" onclick="abrirModal('Passaporte VIP', '3 Shows (05 a 07/11)')">Adquirir Passaporte VIP</button>
+        </article>
+
+        <article class="plano">
+          <h3>Passaporte Open Bar</h3>
+          <div class="plano-preco">
+            <strong>R$ 690</strong> <small>/3 shows</small>
+          </div>
+          <ul class="plano-lista">
+            <li>Acesso ao Camarote Open Bar em todos os shows</li>
+            <li>Bebidas ilimitadas a noite toda</li>
+            <li>Visão panorâmica e elevada para o palco</li>
+            <li>Lounge privativo com DJ nos intervalos</li>
+          </ul>
+          <button class="btn btn-contorno" onclick="abrirModal('Passaporte Open Bar', '3 Shows (05 a 07/11)')">Adquirir Passaporte Camarote</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. AGENDA DE LOTES (GRID) -->
+  <section id="agenda" class="secao">
+    <div class="container">
+      <div class="secao-cabecalho">
+        <p class="eyebrow">Tabela de Lotes</p>
+        <h2>Disponibilidade por <em>Setor</em></h2>
+      </div>
+
+      <div class="agenda-rolagem">
+        <div class="agenda">
+          <div class="agenda-canto">Atração</div>
+          <div class="agenda-dia">Pista</div>
+          <div class="agenda-dia">VIP Front</div>
+          <div class="agenda-dia">Camarote</div>
+          <div class="agenda-dia">Premium</div>
+          <div class="agenda-dia">Bistrô</div>
+          <div class="agenda-dia">Backstage</div>
+
+          <!-- Quinta 05/11 -->
+          <div class="agenda-hora">Luan Santana (05/11)</div>
+          <div class="slot livre" onclick="abrirModal('Luan Santana - Pista', '05/11')">R$ 80</div>
+          <div class="slot livre" onclick="abrirModal('Luan Santana - VIP Front', '05/11')">R$ 140</div>
+          <div class="slot livre" onclick="abrirModal('Luan Santana - Camarote', '05/11')">R$ 250</div>
+          <div class="slot ocupado">Esgotado</div>
+          <div class="slot livre" onclick="abrirModal('Luan Santana - Bistrô', '05/11')">R$ 400</div>
+          <div class="slot ocupado">Esgotado</div>
+
+          <!-- Sexta 06/11 -->
+          <div class="agenda-hora">Henrique & Juliano (06/11)</div>
+          <div class="slot livre" onclick="abrirModal('Henrique & Juliano - Pista', '06/11')">R$ 85</div>
+          <div class="slot livre" onclick="abrirModal('Henrique & Juliano - VIP Front', '06/11')">R$ 150</div>
+          <div class="slot livre" onclick="abrirModal('Henrique & Juliano - Camarote', '06/11')">R$ 270</div>
+          <div class="slot livre" onclick="abrirModal('Henrique & Juliano - Premium', '06/11')">R$ 340</div>
+          <div class="slot livre" onclick="abrirModal('Henrique & Juliano - Bistrô', '06/11')">R$ 480</div>
+          <div class="slot livre" onclick="abrirModal('Henrique & Juliano - Backstage', '06/11')">R$ 600</div>
+
+          <!-- Sábado 07/11 -->
+          <div class="agenda-hora">Gusttavo Lima (07/11)</div>
+          <div class="slot livre" onclick="abrirModal('Gusttavo Lima - Pista', '07/11')">R$ 90</div>
+          <div class="slot livre" onclick="abrirModal('Gusttavo Lima - VIP Front', '07/11')">R$ 160</div>
+          <div class="slot livre" onclick="abrirModal('Gusttavo Lima - Camarote', '07/11')">R$ 280</div>
+          <div class="slot livre" onclick="abrirModal('Gusttavo Lima - Premium', '07/11')">R$ 350</div>
+          <div class="slot livre" onclick="abrirModal('Gusttavo Lima - Bistrô', '07/11')">R$ 450</div>
+          <div class="slot ocupado">Esgotado</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DE COMPRA -->
+  <div id="modalCompra" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+      <h3 id="modalTitulo" style="margin-bottom: 0.4rem;">Comprar Ingresso</h3>
+      <p id="modalData" class="eyebrow"></p>
+
+      <form onsubmit="finalizarCompra(event)">
+        <div class="campo-grupo">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="campo-grupo">
+          <label for="email">E-mail para Recebimento:</label>
+          <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div class="campo-grupo">
+          <label for="qtd">Quantidade:</label>
+          <input type="number" id="qtd" min="1" max="6" value="1" required>
+        </div>
+        <button type="submit" class="btn btn-ouro" style="width: 100%; margin-top: 1rem;">Confirmar Pagamento</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 9. RODAPÉ (FLEXBOX) -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-conteudo">
+        <div class="rodape-marca">
+          <a href="#" class="logo">Villa <span>Mix</span></a>
+          <p style="font-size: 0.85rem; color: var(--texto);">
+            A plataforma oficial de ingressos do Villa Mix para os maiores shows no Recinto de Votuporanga/SP.
+          </p>
+        </div>
+
+        <div class="rodape-links">
+          <p class="eyebrow">Navegação</p>
+          <a href="#destaque">Show Destaque</a>
+          <a href="#setores">Setores</a>
+          <a href="#galeria">Experiência</a>
+          <a href="#passaportes">Passaportes</a>
+          <a href="#agenda">Disponibilidade</a>
+        </div>
+
+        <div class="rodape-contato">
+          <p class="eyebrow">Atendimento & Suporte</p>
+          <p>📧 suporte@villamixvotu.com.br</p>
+          <p>📱 (17) 99999-8888</p>
+          <p>📍 Av. Ângelo Bimbato, Recinto de Eventos, Votuporanga - SP</p>
+        </div>
+      </div>
+
+      <div class="rodape-copy">
+        <p>&copy; 2026 Villa Mix Votuporanga. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function abrirModal(titulo, data) {
+      document.getElementById('modalTitulo').innerText = 'Ingresso: ' + titulo;
+      document.getElementById('modalData').innerText = 'Evento: ' + data + ' • Recinto de Votuporanga';
+      document.getElementById('modalCompra').style.display = 'grid';
+    }
+
+    function fecharModal() {
+      document.getElementById('modalCompra').style.display = 'none';
+    }
+
+    function finalizarCompra(e) {
+      e.preventDefault();
+      alert('Redirecionando para o Gateway de Pagamento Seguro!');
+      fecharModal();
+    }
+
+    window.onclick = function(e) {
+      const modal = document.getElementById('modalCompra');
+      if (e.target === modal) fecharModal();
+    }
+  </script>
+</body>
+</html>
